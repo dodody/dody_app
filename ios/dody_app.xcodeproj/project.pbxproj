@@ -18,6 +18,7 @@
 		3BC1C985D11AB3B647D4134C /* libPods-dody_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37C43BFD77CDF79BF61F0FD6 /* libPods-dody_app.a */; };
 		6F11D6AAE6AA77071D20D713 /* libPods-dody_app-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C4B97A9C59AA091CB847BC4 /* libPods-dody_app-tvOSTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		C2BD16A824DB14860052B001 /* SplashScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2BD16A724DB14860052B001 /* SplashScreen.storyboard */; };
 		C64DA0B81BE2EA7A25969345 /* libPods-dody_app-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9093FBA43D8F6BDDC7EB385 /* libPods-dody_app-tvOS.a */; };
 		FD9E609153158FC23C877624 /* libPods-dody_app-dody_appTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE485B117EBD0286841DEA47 /* libPods-dody_app-dody_appTests.a */; };
 /* End PBXBuildFile section */
@@ -60,6 +61,7 @@
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = dody_app/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8C1E3131359336210C95786D /* Pods-dody_app-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dody_app-tvOS.release.xcconfig"; path = "Target Support Files/Pods-dody_app-tvOS/Pods-dody_app-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		8DACE69DD0845D7A335237E5 /* Pods-dody_app-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dody_app-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-dody_app-tvOSTests/Pods-dody_app-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2BD16A724DB14860052B001 /* SplashScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SplashScreen.storyboard; sourceTree = "<group>"; };
 		D60D9C6B74553D578A01A53B /* Pods-dody_app-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dody_app-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-dody_app-tvOSTests/Pods-dody_app-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		D6EA30423E4243F3A4A3A93A /* Pods-dody_app-dody_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-dody_app-dody_appTests.release.xcconfig"; path = "Target Support Files/Pods-dody_app-dody_appTests/Pods-dody_app-dody_appTests.release.xcconfig"; sourceTree = "<group>"; };
 		D9093FBA43D8F6BDDC7EB385 /* libPods-dody_app-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-dody_app-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -132,6 +134,7 @@
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
+				C2BD16A724DB14860052B001 /* SplashScreen.storyboard */,
 			);
 			name = dody_app;
 			sourceTree = "<group>";
@@ -194,7 +197,6 @@
 				8DACE69DD0845D7A335237E5 /* Pods-dody_app-tvOSTests.debug.xcconfig */,
 				D60D9C6B74553D578A01A53B /* Pods-dody_app-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,6 +296,7 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = L8YW5B4BBN;
 						LastSwiftMigration = 1120;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -341,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
+				C2BD16A824DB14860052B001 /* SplashScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -656,6 +660,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8YW5B4BBN;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = dody_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -664,7 +669,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dody.dodyapp;
 				PRODUCT_NAME = dody_app;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -679,6 +684,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L8YW5B4BBN;
 				INFOPLIST_FILE = dody_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -686,7 +692,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.dody.dodyapp;
 				PRODUCT_NAME = dody_app;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
